@@ -1,0 +1,24 @@
+{
+  "name": "real-time-web",
+  "version": "1.0.0",
+  "description": "A real-time web application built on Node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickrttn/real-time-web.git"
+  },
+  "keywords": [
+    "websockets",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Nick Rutten <hello@nickrttn.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nickrttn/real-time-web/issues"
+  },
+  "homepage": "https://github.com/nickrttn/real-time-web#readme"
+}
