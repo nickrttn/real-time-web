@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/nickrttn/real-time-web/issues"
   },
-  "homepage": "https://github.com/nickrttn/real-time-web#readme"
+  "homepage": "https://github.com/nickrttn/real-time-web#readme",
+  "devDependencies": {
+    "xo": "^0.18.1"
+  }
 }
