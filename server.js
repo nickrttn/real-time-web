@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 
 socket.on('connection', stream => {
 	stream.on('chat message', msg => {
-		console.log('received: ', msg);
+		socket.emit('chat message', msg);
 	});
 });
 
