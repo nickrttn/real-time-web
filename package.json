@@ -6,8 +6,9 @@
   "scripts": {
     "start": "node server.js",
     "start:dev": "NODE_ENV=DEVELOPMENT nodemon server.js",
-    "build:css": "cleancss -o build/index.css assets/css/index.css",
+    "build": "npm run build:js & npm run build:css",
     "build:js": "browserify assets/js/browser.js -t babelify -g uglifyify -o build/browser.js",
+    "build:css": "cleancss -o build/index.css assets/css/index.css",
     "test": "xo"
   },
   "repository": {
