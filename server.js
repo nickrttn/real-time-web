@@ -10,6 +10,10 @@ app.set('view engine', 'ejs');
 
 app.use('/assets', express.static('build'));
 
+app.get('/', (req, res) => {
+	res.render('pages/index');
+});
+
 app.listen(app.get('port'), err => {
 	if (err) throw chalk.red(err); // eslint-disable-line curly
 	console.log(chalk.blue(`----- Listening on http://localhost:${app.get('port')} -----`));
