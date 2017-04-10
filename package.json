@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/nickrttn/real-time-web#readme",
   "devDependencies": {
+    "nodemon": "^1.11.0",
     "xo": "^0.18.1"
   }
 }
