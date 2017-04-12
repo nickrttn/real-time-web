@@ -4,6 +4,8 @@ A real-time web application built on Node.js. The application is a simple chat a
 
 ## How to run it
 
+Execute the following commands in a terminal window:
+
 1. `git clone https://github.com/nickrttn/real-time-web.git`
 2. `cd real-time-web && touch .env`
 3. Open `.env` and define the port you want to listen on: `PORT=3000`. `3000` is just a suggestion.
