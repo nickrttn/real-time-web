@@ -9,6 +9,7 @@
     "build": "npm run build:js & npm run build:css",
     "build:js": "browserify assets/js/browser.js -t babelify -g uglifyify -o build/browser.js",
     "build:css": "cleancss -o build/index.css assets/css/index.css",
+    "watch:js": "watchify assets/js/browser.js -t babelify -g uglifyify -o build/browser.js",
     "test": "xo"
   },
   "repository": {
@@ -33,6 +34,7 @@
     "clean-css-cli": "^4.0.10",
     "nodemon": "^1.11.0",
     "uglifyify": "^3.0.4",
+    "watchify": "^3.9.0",
     "xo": "^0.18.1"
   },
   "dependencies": {
@@ -44,6 +46,9 @@
     "socket.io-client": "^1.7.3"
   },
   "xo": {
-    "envs": ["browser", "node"]
+    "envs": [
+      "browser",
+      "node"
+    ]
   }
 }
