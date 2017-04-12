@@ -4,6 +4,7 @@
   "description": "A real-time web application built on Node.js",
   "main": "server.js",
   "scripts": {
+  	"postinstall": "npm run build-js & npm run build-css",
     "start": "node server.js",
     "start:dev": "NODE_ENV=DEVELOPMENT nodemon server.js",
     "build-js": "browserify assets/js/browser.js -t babelify -g uglifyify -o build/browser.js",
