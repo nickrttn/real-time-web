@@ -7,7 +7,8 @@ const io = require('socket.io-client');
 	const msg = document.querySelector('#message');
 	const msgs = document.querySelector('#messages');
 
-	form.addEventListener('submit', () => {
+	form.addEventListener('submit', (evt) => {
+		evt.preventDefault();
 		socket.emit('chat message', msg.value);
 	});
 
