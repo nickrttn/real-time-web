@@ -12,6 +12,10 @@
     "watch:js": "watchify assets/js/browser.js -t babelify -g uglifyify -o build/browser.js",
     "test": "xo"
   },
+  "engines": {
+  	"node": "v7.7.3",
+  	"npm": "4.1.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nickrttn/real-time-web.git"
