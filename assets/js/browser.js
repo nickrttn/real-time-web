@@ -9,13 +9,20 @@ const io = require('socket.io-client');
 	const msgs = document.querySelector('#messages');
 
 	form.addEventListener('submit', evt => {
+		// Send the message to the server over a WebSocket connection
 		socket.emit('chat message', {
 			name: name.value,
 			msg: msg.value
 		});
 
+		// Don't do an actual GET or POST
 		evt.preventDefault();
+
+		// Clear the chat field
 		msg.value = '';
+
+		// Scroll the messages list down
+		msgs.scrollTop = msgs.scrollHeight;
 	});
 
 	socket.on('chat message', msg => {

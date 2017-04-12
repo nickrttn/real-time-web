@@ -54,6 +54,7 @@ ul {
 }
 
 li {
+	flex: 0 0 auto;
 	color: var(--brblack);
 }
 
@@ -92,15 +93,11 @@ label {
 	margin-bottom: .5em;
 }
 
-input, textarea, button {
+input, button {
 	font-size: .9em;
-	padding: .25em;
+	padding: .5em;
 	border: 0;
 	border-radius: .15em;
-}
-
-textarea {
-	height: 3em;
 }
 
 button {
@@ -114,10 +111,6 @@ button {
 	background: var(--green);
 }
 
-textarea {
-	width: 100%;
-}
-
 ::placeholder {
 	font-size: .9em;
 	font-weight: 300;
@@ -129,6 +122,10 @@ textarea {
 	flex-flow: column nowrap;
 	margin-right: .5em;
 	align-items: flex-start;
+}
+
+#message {
+	width: 100%;
 }
 
 [data-field="message"] {
