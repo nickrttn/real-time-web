@@ -32,5 +32,8 @@ const io = require('socket.io-client');
 				<span data-type="sender">${msg.name}</span>
 			</li>`
 		);
+
+		// Scroll the messages list down
+		msgs.scrollTop = msgs.scrollHeight;
 	});
 })();
