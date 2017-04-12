@@ -1,12 +1,23 @@
 <%- include('../partials/head') %>
 
-<h1>Real-time baby, yeah</h1>
+<main>
+	<h1>Chat your head off</h1>
 
-<ul id="messages"></ul>
-<form action="">
-	<label for="message">Your message</label>
-  <input type="text" id="message" autocomplete="off">
-  <button type="submit">Send</button>
-</form>
+	<ul id="messages"></ul>
+	<form action="">
+
+		<div class="form-field" data-field="name">
+			<label for="message">Your name</label>
+		  <input type="text" id="name" autocomplete="off" placeholder="eg. Boaty McBoatFace">
+		</div>
+
+		<div class="form-field" data-field="message">
+			<label for="message">Your message</label>
+		  <textarea id="message" autocomplete="off" placeholder="eg. tooooot toooooot" autofocus></textarea>
+		</div>
+
+	  <button type="submit">Send</button>
+	</form>
+</main>
 
 <%- include('../partials/foot') %>
