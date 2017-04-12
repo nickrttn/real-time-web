@@ -1,6 +1,6 @@
 # A real-time web application built on Node.js
 
-A real-time web application built on Node.js. The application is a simple chat application used to explore [socket.io](https://www.npmjs.com/package/socket.io). Communication runs over websockets.
+A real-time web application built on Node.js. The application is a simple chat application used to explore [socket.io](https://www.npmjs.com/package/socket.io). Communication runs over websockets. You can see a live example of the application at [shrouded-caverns-20282.herokuapp.com](https://shrouded-caverns-20282.herokuapp.com).
 
 ## How to run it
 
